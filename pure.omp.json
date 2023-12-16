@@ -78,7 +78,7 @@
       "type": "prompt"
     }
   ],
-  "console_title_template": "{{if .Root}}(Admin){{end}} {{.PWD}}",
+  "console_title_template": "PowerShell",
   "transient_prompt": {
     "foreground": "#8e98b4",
     "foreground_templates": [
