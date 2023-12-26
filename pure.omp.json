@@ -7,16 +7,16 @@
         {
           "foreground": "#ff7280",
           "style": "plain",
-          "template": "{{ .UserName }} ",
+          "template": "darkesthj ",
           "type": "session"
         },
         {
-          "foreground": "#6aa8a6",
+          "foreground": "#60a4c4",
           "properties": {
             "style": "full"
           },
           "style": "plain",
-          "template": "{{ .Folder }} ",
+          "template": "{{ .Path }} ",
           "type": "path"
         }
       ],
