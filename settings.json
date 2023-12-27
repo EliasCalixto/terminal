@@ -52,7 +52,8 @@
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
-                "name": "Windows PowerShell"
+                "name": "Windows PowerShell",
+                "startingDirectory": "C:\\Users\\elias\\Dev"
             },
             {
                 "commandline": "%SystemRoot%\\System32\\cmd.exe",
@@ -176,17 +177,17 @@
             "yellow": "#C18301"
         },
         {
-            "background": "#191E31",
+            "background": "#191e31",
             "black": "#282A36",
-            "blue": "#204474",
+            "blue": "#191e31",
             "brightBlack": "#686868",
             "brightBlue": "#57C7FF",
             "brightCyan": "#E86666",
-            "brightGreen": "#42B7BB",
+            "brightGreen": "#60a4c4",
             "brightPurple": "#FF6AC1",
             "brightRed": "#FF5C57",
             "brightWhite": "#EFF0EB",
-            "brightYellow": "#51b7bb",
+            "brightYellow": "#51B7BB",
             "cursorColor": "#97979B",
             "cyan": "#589BD1",
             "foreground": "#CDCBCB",

@@ -5,6 +5,13 @@
       "alignment": "left",
       "segments": [
         {
+          "foreground": "#70cea2",
+          "powerline_symbol": "",
+          "style": "powerline",
+          "template": "({{ .Venv }}) ",
+          "type": "python"
+        },
+        {
           "foreground": "#ff7280",
           "style": "plain",
           "template": "darkesthj ",
@@ -16,7 +23,7 @@
             "style": "full"
           },
           "style": "plain",
-          "template": "{{ .Folder }} ",
+          "template": "{{ .Path }} ",
           "type": "path"
         }
       ],
@@ -37,7 +44,7 @@
             "github_icon": ""
           },
           "style": "plain",
-          "template": "{{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}<#ff7280>+</>{{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
+          "template": "{{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}<#ff7280>\ue235</>{{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \ue235 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ue235 {{ .StashCount }}{{ end }} ",
           "type": "git"
         }
       ],
