@@ -1,4 +1,4 @@
-eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/pure.omp.json)"
+eval "$(oh-my-posh init zsh --config /Users/darkesthj/dev/terminal/pure.omp.json)"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
