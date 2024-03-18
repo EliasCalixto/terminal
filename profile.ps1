@@ -3,5 +3,5 @@
 (@(& 'C:/Users/elias/AppData/Local/Programs/oh-my-posh/bin/oh-my-posh.exe' init pwsh --config='C:\Users\elias\dev\terminal\pure.omp.json' --print) -join "`n") | Invoke-Expression
 
 function monitor {
-    python "C:\Users\elias\dev\workspace\monitor.py"
+    python "C:\Users\elias\dev\monitor\monitor.py"
 }
