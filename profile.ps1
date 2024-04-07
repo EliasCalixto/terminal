@@ -5,3 +5,5 @@
 function monitor {
     python "C:\Users\elias\dev\monitor\monitor.py"
 }
+
+Remove-Item "$env:APPDATA\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt"
