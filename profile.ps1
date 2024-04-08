@@ -6,4 +6,14 @@ function monitor {
     python "C:\Users\elias\dev\monitor\monitor.py"
 }
 
-Remove-Item "$env:APPDATA\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt"
+try {
+    Remove-Item "$env:APPDATA\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt" -ErrorAction Stop
+}
+catch {
+    if ($_.Exception -is [System.IO.FileNotFoundException]) {
+        Write-Host "File does not exist. Skipping removal."
+    }
+    else {
+        Write-Host "An error occurred"
+    }
+}
