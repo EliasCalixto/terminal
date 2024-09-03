@@ -5,7 +5,7 @@
       "alignment": "left",
       "segments": [
         {
-          "foreground": "#70cea2",
+          "foreground": "#6fcba0",
           "powerline_symbol": "",
           "style": "powerline",
           "template": "({{ .Venv }}) ",
@@ -18,7 +18,7 @@
           "type": "session"
         },
         {
-          "foreground": "#60a4c4",
+          "foreground": "#58c0e5",
           "properties": {
             "style": "full"
           },
