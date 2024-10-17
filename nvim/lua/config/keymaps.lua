@@ -9,10 +9,8 @@ vim.keymap.set("n", "gt", ":bnext<Return>", opts)
 -- Close Buffer
 vim.keymap.set("n", "qq", ":bw<Return>", opts)
 
---
-
--- Open/Close Terminal
--- "Control / "
-
 -- Redo
 vim.keymap.set("n", "U", ":redo<Return>", opts)
+
+-- Replace Text
+vim.keymap.set("n", "<C-r>", ":%s/", opts)
