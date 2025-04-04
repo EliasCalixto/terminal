@@ -1,105 +1,96 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
-  "transient_prompt": {
-    "template": "❯ ",
-    "foreground": "#8e98b4",
-    "foreground_templates": [
-      "{{ if gt .Code 0 }}#BF616A{{ end }}"
-    ]
-  },
   "blocks": [
     {
-      "type": "prompt",
       "alignment": "left",
       "segments": [
         {
-          "properties": {
-            "cache_duration": "none"
-          },
-          "template": "({{ .Venv }}) ",
           "foreground": "#97e3bf",
-          "type": "python",
-          "style": "powerline"
+          "powerline_symbol": "",
+          "style": "powerline",
+          "template": "({{ .Venv }}) ",
+          "type": "python"
         },
         {
-          "properties": {
-            "cache_duration": "none"
-          },
-          "template": "darkesthj ",
           "foreground": "#ff7280",
-          "type": "session",
-          "style": "plain"
+          "style": "plain",
+          "template": "darkesthj ",
+          "type": "session"
         },
         {
+          "foreground": "#89c8df",
           "properties": {
-            "cache_duration": "none",
             "style": "full"
           },
+          "style": "plain",
           "template": "{{ .Path }} ",
-          "foreground": "#89c8df",
-          "type": "path",
-          "style": "plain"
+          "type": "path"
         }
-      ]
+      ],
+      "type": "prompt"
     },
     {
-      "type": "prompt",
       "alignment": "left",
       "segments": [
         {
+          "foreground": "#6C6C6C",
           "properties": {
             "branch_ahead_icon": "<#88C0D0>\u21e1 </>",
             "branch_behind_icon": "<#88C0D0>\u21e3 </>",
             "branch_icon": "",
-            "cache_duration": "none",
             "fetch_stash_count": true,
             "fetch_status": true,
             "fetch_upstream_icon": true,
             "github_icon": ""
           },
-          "template": "{{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}<#ff7280>*</>{{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}*{{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }}\ue235{{ .StashCount }}{{ end }} ",
-          "foreground": "#6C6C6C",
-          "type": "git",
-          "style": "plain"
-        }
-      ]
-    },
-    {
-      "type": "prompt",
-      "alignment": "left",
-      "segments": [
-        {
-          "properties": {
-            "cache_duration": "none",
-            "style": "austin"
-          },
-          "template": " {{ .FormattedMs }} ",
-          "foreground": "#92c089",
-          "type": "executiontime",
-          "style": "plain"
-        }
-      ]
-    },
-    {
-      "type": "prompt",
-      "alignment": "left",
-      "segments": [
-        {
-          "properties": {
-            "always_enabled": true,
-            "cache_duration": "none"
-          },
-          "template": "❯ ",
-          "foreground": "#8e98b4",
-          "type": "status",
           "style": "plain",
-          "foreground_templates": [
-            "{{ if gt .Code 0 }}#BF616A{{ end }}"
-          ]
+          "template": "{{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}<#ff7280>*</>{{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}*{{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }}\ue235{{ .StashCount }}{{ end }} ",
+          "type": "git"
         }
       ],
-      "newline": true
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "#92c089",
+          "properties": {
+            "style": "austin"
+          },
+          "style": "plain",
+          "template": " {{ .FormattedMs }} ",
+          "type": "executiontime"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "#8e98b4",
+          "foreground_templates": [
+            "{{ if gt .Code 0 }}#BF616A{{ end }}"
+          ],
+          "properties": {
+            "always_enabled": true
+          },
+          "style": "plain",
+          "template": "\u276f ",
+          "type": "status"
+        }
+      ],
+      "type": "prompt"
     }
   ],
-  "version": 3
+  "transient_prompt": {
+    "foreground": "#8e98b4",
+    "foreground_templates": [
+      "{{ if gt .Code 0 }}#BF616A{{ end }}"
+    ],
+    "template": "\u276f "
+  },
+  "version": 2
 }
