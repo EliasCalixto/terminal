@@ -97,7 +97,7 @@
           ]
         }
       ],
-      "newline": false
+      "newline": true 
     }
   ],
   "version": 3
