@@ -35,8 +35,8 @@
             "cache_duration": "none",
             "style": "full"
           },
-          "template": "{{ .Path }} ",
-          "foreground": "#89b1df",
+          "template": "{{.Path}} ",
+          "foreground": "#89cfdf",
           "type": "path",
           "style": "plain"
         }
@@ -90,7 +90,7 @@
             "cache_duration": "none"
           },
           "template": "❯ ",
-          "foreground": "#97e3bf",
+          "foreground": "#999999",
           "type": "status",
           "style": "plain",
           "foreground_templates": [

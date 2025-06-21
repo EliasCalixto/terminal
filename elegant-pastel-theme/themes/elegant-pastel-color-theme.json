@@ -1,0 +1,68 @@
+{
+  "name": "Elias Elegant Pastel",
+  "type": "dark",
+  "colors": {
+    "editor.background": "#1E1E1ECC",
+    "editor.foreground": "#D0D0D0",
+    "editor.selectionBackground": "#3E445180",
+    "editor.lineHighlightBackground": "#2C313C60",
+    "editorCursor.foreground": "#F2CDCD",
+    "editorIndentGuide.background": "#2E2E2E",
+    "editorIndentGuide.activeBackground": "#555555",
+    "editorBracketMatch.border": "#A0A0A0",
+    "editorBracketHighlight.foreground1": "#A0A0A0",
+    "editorBracketHighlight.foreground2": "#A0A0A0",
+    "editorBracketHighlight.foreground3": "#A0A0A0",
+    "editorBracketHighlight.foreground4": "#A0A0A0",
+    "editorBracketHighlight.foreground5": "#A0A0A0",
+    "editorBracketHighlight.foreground6": "#A0A0A0",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#FF0000",
+    "statusBar.background": "#1A1A1A",
+    "statusBar.foreground": "#CCCCCC",
+    "statusBar.normalBackground": "#90EE90",
+    "statusBar.insertBackground": "#87CEFA",
+    "statusBar.visualBackground": "#F4A460",
+    "statusBar.replaceBackground": "#D08770",
+    "sideBar.background": "#202020",
+    "sideBar.foreground": "#BBBBBB",
+    "terminal.background": "#1E1E1E",
+    "terminal.foreground": "#CCCCCC"
+  },
+  "tokenColors": [
+    {
+      "scope": ["variable", "variable.other", "variable.readwrite"],
+      "settings": { "foreground": "#B0B0B0" }
+    },
+    {
+      "scope": ["variable.parameter", "meta.function.parameters"],
+      "settings": { "foreground": "#B0B0B0" }
+    },
+    {
+      "scope": ["entity.name.function", "support.function"],
+      "settings": { "foreground": "#82AFFF" }
+    },
+    {
+      "scope": "keyword",
+      "settings": { "foreground": "#F2A8A8" }
+    },
+    {
+      "scope": "string",
+      "settings": { "foreground": "#A6E3A1" }
+    },
+    {
+      "scope": ["constant.numeric"],
+      "settings": { "foreground": "#EADBBF" }
+    },
+    {
+      "scope": ["entity.name.type", "support.class", "support.type"],
+      "settings": { "foreground": "#B5E8E0" }
+    },
+    {
+      "scope": "comment",
+      "settings": {
+        "foreground": "#777777",
+        "fontStyle": "italic"
+      }
+    }
+  ]
+}
